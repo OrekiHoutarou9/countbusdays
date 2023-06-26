@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title> Enter Info </title>
+
+    </head>
+
+    <body>
+
+
+        {% if option == 1 %}
+
+        <form action="#" method="post">
+
+            <p> Enter the date you want to count to (yyyy-mm-dd): </p>
+
+            <input type="text" id="to_date" name="to_date" autocomplete="off" /> <br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+        {% elif option == 2 %}
+
+        <form action="#" method="post">
+
+            <p> Enter the date you want to count to (yyyy-mm-dd): </p>
+
+            <input type="text" id="to_date" name="to_date" autocomplete="off" />
+
+            <p> Enter holiday start date (yyyy-mm-dd): </p>
+
+            <input type="text" id="holiday_start" name="holiday_start" autocomplete="off" />
+
+            <p> Enter holiday end date (yyyy-mm-dd): </p>
+
+            <input type="text" id="holiday_end" name="holiday_end" autocomplete="off" /> <br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+        {% elif option == 3 %}
+
+        <form action="#" method="post">
+
+            <p> Enter the date you want to count from (yyyy-mm-dd): </p>
+
+            <input type="text" id="from_date" name="from_date" autocomplete="off" />
+
+            <p> Enter the date you want to count to (yyyy-mm-dd): </p>
+
+            <input type="text" id="to_date" name="to_date" autocomplete="off" /> <br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+        {% else %}
+
+        <form action="#" method="post">
+
+            <p> Enter the date you want to count from (yyyy-mm-dd): </p>
+
+            <input type="text" id="from_date" name="from_date" autocomplete="off" />
+
+            <p> Enter the date you want to count to (yyyy-mm-dd): </p>
+
+            <input type="text" id="to_date" name="to_date" autocomplete="off" />
+
+            <p> Enter holiday start date (yyyy-mm-dd): </p>
+
+            <input type="text" id="holiday_start" name="holiday_start" autocomplete="off" />
+
+            <p> Enter holiday end date (yyyy-mm-dd): </p>
+
+            <input type="text" id="holiday_end" name="holiday_end" autocomplete="off" /> <br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+        {% endif %}
+        
+    </body>
+
+</html>
